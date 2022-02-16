@@ -1,0 +1,7 @@
+shared:
+  image: node:16
+jobs:
+  main:
+    requires: [ "~pr", "~commit" ]
+    steps:
+      - echo: echo 'bar'
